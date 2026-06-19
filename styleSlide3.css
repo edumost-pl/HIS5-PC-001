@@ -1,0 +1,199 @@
+
+
+
+.slide3-grid{
+
+    display:grid;
+    gap:20px;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    grid-template-areas:
+        "evolution evolution"
+        "changes changes"
+        "dictionary tool"
+        "owl owl";
+}
+
+/* Привязка областей */
+.evolution-card{
+    grid-area:evolution;
+}
+
+
+
+.changes-card{
+    grid-area:changes;
+}
+
+.owl-area{
+    grid-area:owl;
+}
+
+.dictionary-card{
+    grid-area:dictionary;
+}
+
+/* Эволюция */
+
+/* Большая шкала времени */
+
+
+.image-area img{
+    width:100%;
+    height:auto;
+    display:block;
+    transition:.3s;
+    cursor: pointer;
+}
+.image-area:hover{
+    transform: scale(1.03);
+}
+.evolution-card h3{
+
+    text-align:center;
+
+    font-size:2rem;
+
+    color:#6b2d0c;
+
+    margin-bottom:20px;
+}
+.evolution-row{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:20px;
+
+    align-items:end;
+}
+.human-stage{
+
+    text-align:center;
+}
+.human-stage img{
+
+    width:100%;
+    max-width:180px;
+
+    margin:auto;
+    display:block;
+}
+.human-stage h4{
+
+    color:#5b2ca3;
+
+    font-size:1.5rem;
+
+    margin-bottom:8px;
+}
+.human-stage p{
+
+    font-size:1.1rem;
+}
+
+/* Pięściak */
+.tool-card{
+    text-align:center;
+    grid-area:tool;
+    background:var(--panel);
+    border:3px solid var(--border);
+    border-radius:var(--radius);
+    padding:20px;
+    box-shadow:var(--shadow);
+}
+
+.tool-card img{
+    max-width:60%;
+    display:block;
+    margin: 0 auto;
+}
+
+/* Jak zmieniał się człowiek */
+
+.changes-card h3{
+
+    text-align:center;
+
+    color:#6b2d0c;
+
+    font-size:2rem;
+
+    margin-bottom:25px;
+}
+/* Сова */
+
+
+.owl-flex{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+.owl-flex img{
+    width:180px;
+    flex-shrink:0;
+}
+.owl-flex p{
+    line-height: 1.5;
+    font-size: 1.3rem;
+}
+.owl-card h3{
+    color:#7d3f17;
+    margin-bottom:15px;
+}
+
+/* Словничок */
+.dictionary-card h3{
+
+    color:#4f7b2b;
+    font-size: 1.4rem;
+    margin-bottom:20px;
+}
+.dictionary-card p{
+    font-size: 1.3rem;
+    margin-bottom:15px;
+}
+
+
+
+
+
+/* Телефон */
+@media(max-width:900px){
+
+    .slide3-grid{
+
+        grid-template-columns:1fr;
+
+        grid-template-areas:
+            "evolution"
+            "tool"
+            "changes"
+            "owl"
+            "dictionary";
+    }
+
+    .evolution-row{
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .changes-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .owl-flex{
+
+        flex-direction:column;
+
+        text-align:center;
+    }
+}

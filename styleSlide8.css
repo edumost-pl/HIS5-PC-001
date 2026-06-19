@@ -1,0 +1,66 @@
+/* ==========================================
+   SLAJD 8
+   REWOLUCJA NEOLITYCZNA
+========================================== */
+
+.image-area {
+  grid-template-columns: 1fr;
+}
+
+/* .cards-area{
+    grid-template-columns:
+        repeat(4,1fr);
+} */
+
+.intro-area-block {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  justify-content: space-around;
+  gap: 100px;
+  grid-template-columns:
+    1fr
+    1fr;
+  grid-template-areas: "left right";
+}
+
+.left-area {
+  grid-area: left;
+  display: grid;
+  gap: 20px;
+}
+
+.right-area {
+  grid-area: right;
+  display: grid;
+  gap: 20px;
+}
+
+@media (max-width: 1000px) {
+  .cards-area {
+    grid-template-columns: 1fr 1fr;
+  }
+  .intro-area-block {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-area {
+    grid-template-columns: 1fr;
+  }
+
+  .left-area,
+  .right-area {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .intro-area-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 20px;
+  }
+}

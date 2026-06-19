@@ -1,0 +1,20 @@
+/* ==========================================
+   SLAJD 12
+   POWTÓRZENIE
+========================================== */
+
+.cards-area{
+
+    grid-template-columns:1fr;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-image{
+    max-width: 70%;
+    margin: 0 auto;
+}

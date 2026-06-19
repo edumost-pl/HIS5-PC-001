@@ -1,0 +1,54 @@
+/* ==========================================
+   SLAJD 10
+   METALE
+========================================== */
+
+.compare-area{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 20px;
+}
+
+.icon-list li{
+    font-size: 1.3rem;
+}
+
+.differences-card ul{
+    margin: 2% auto;
+    margin-left: 5%;
+}
+.differences-card ul>li{
+    font-size: 1.3rem;
+    color: rgb(97, 95, 95);
+    line-height: 1.5;
+}
+.differences-card h3{
+    color: rgb(186, 110, 11);
+    font-size: 1.4rem;
+} 
+img{
+    border-radius: 20px;
+    margin: 3% 0;
+}
+
+.compare-card h3{
+    font-size: 1.7rem;
+    text-align: center;
+    color: rgb(186, 110, 11);
+}
+.cards-area{
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+}
+
+
+@media (max-width:900px){
+
+    .cards-area{
+
+        grid-template-columns:1fr;
+    }
+
+}

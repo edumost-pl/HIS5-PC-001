@@ -1,0 +1,94 @@
+/* ==========================================
+   UKŁAD SLAJDU
+   TYLKO GRID I ROZMIESZCZENIE
+========================================== */
+
+
+/* GŁÓWNY UKŁAD */
+
+
+
+/* TYTUŁ */
+
+.title-area{
+
+    grid-column:1 / -1;
+
+}
+
+
+/* WPROWADZENIE */
+
+.intro-area{
+
+    grid-column:1 / -1;
+
+}
+
+
+/* ZDJĘCIA */
+
+.image-area{
+
+    display:grid;
+
+    gap:20px;
+
+}
+
+
+/* KARTY */
+
+.cards-area{
+
+    display:grid;
+
+    gap:20px;
+
+}
+
+
+/* SOWA */
+
+.owl-area{
+
+    grid-column:1 / -1;
+
+}
+
+/* ==========================================
+   SZABLON SLAJDU
+========================================== */
+
+.title-area{
+    grid-column:1/-1;
+}
+
+.intro-area{
+    grid-column:1/-1;
+}
+
+.owl-area{
+    grid-column:1/-1;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:900px){
+
+    .image-area{
+
+        grid-template-columns:1fr;
+    }
+
+    .cards-area{
+
+        grid-template-columns:1fr;
+    }
+
+}
+
+

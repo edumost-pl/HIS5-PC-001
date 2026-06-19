@@ -1,0 +1,155 @@
+<!-- slide1.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide1</title>
+    <link rel="stylesheet" href="styleSlide1.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleSlideTemplate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <button id="uaBtn" class="ua-btn">
+            🇺🇦
+        </button>
+        <div id="overlay" class="overlay"></div>
+        <aside id="uaPanel" class="ua-panel">
+            <div class="ua-header">
+                <h2>
+                    🇺🇦 Українська допомога
+                </h2>
+                <button id="closeUa">
+                    ✕
+                </button>
+            </div>
+            <div class="ua-body">
+                <h3>🕰️ Подорож у часи перших людей</h3>
+                <p>Привіт, юний досліднику!
+                    Сьогодні ми вирушимо в захопливу подорож у далеке минуле
+                    та дізнаємося, як жили найдавніші люди.</p>
+                <div class="preview-item">👣 Як жили перші люди</div>
+                <div class="preview-item">🏹 Звідки вони здобували їжу</div>
+                <div class="preview-item">🏡 Чому почали будувати поселення</div>
+                <div class="preview-item">⚒️ Як люди навчилися використовувати метали</div>
+                <p class="ua-start">➡ Розпочнімо подорож у світ первісних людей!</p>
+                <hr>
+                <p>🤔 Чи зміг би ти прожити один день без магазину,
+                    телефону та електрики?</p>
+                <p>➡ Незабаром ти познайомишся з найдавнішими предками сучасної людини.</p>
+            </div>
+        </aside>
+
+        <!-- lesson slide 1 -->
+        <section class="lesson-layout">
+            <!-- TITLE -->
+            <header class="title-area">
+                <div class="title-area-block">
+                    <img src="images/czasy.png" alt="">
+                    <h2> 1. Podróż do czasów pierwszych ludzi</h1>
+                </div>
+                <div class="history-divider">
+                    ⚜
+                </div>
+            </header>
+
+            <!-- INTRO -->
+            <aside class="intro-area">
+                <!-- LEFT -->
+                <aside class="left-area">
+                    <main class="image-area">
+                        <img src="images/slide1a.png" alt="" class="main-image zoom-image">
+                    </main>
+                    <div class="panel orange zoomText">
+                        <h3>Czy udałoby Ci się przeżyć jeden dzień
+                            bez sklepu, telefonu i prądu?</h3>
+                    </div>
+                    <div class="panel blue zoomText">
+                        <h3>Przygotuj się na fascynującą podróż!</h3>
+                        <ul  class="lesson-list">
+                            <li>Poznamy życie pierwszych ludzi.</li>
+                            <li>Dowiesz się, jak radzili sobie bez współczesnych udogodnień.</li>
+                            <li>Odkryjemy, jak powstały osady i jak zmieniał się świat.</li>
+                            <li>Zobaczymy, jak wielkie odkrycia wpłynęły na nasze życie.</li>
+                        </ul>
+                    </div>
+
+                </aside>
+                <!-- RAIGHT -->
+                <aside class="right-area">
+                    <main class="image-area">
+                        <img src="images/slide1b.png" alt="" class="main-image zoom-image">
+                    </main>
+
+                    <div class="panel orange zoomText">
+                        <h3 style="text-align: center;">Za chwilę dowiesz się:</h3>
+                        <div class="preview-item">
+                            👣 Jak żyli pierwsi ludzie
+                        </div>
+
+                        <div class="preview-item">
+                            🏹 Skąd zdobywali pożywienie
+                        </div>
+
+                        <div class="preview-item">
+                            🏡 Dlaczego zaczęli budować osady
+                        </div>
+
+                        <div class="preview-item">
+                            ⚒️ Jak odkryli metale
+                        </div>
+                    </div>
+                </aside>
+            </aside>
+            <!-- sowa -->
+            <aside class="owl-area panel">
+
+                <div class="flexImage">
+                    <img src="images/sowaIcon.png" alt="">
+                </div>
+
+                <div>
+                    <h3>Sowa Historyk</h2>
+
+                    <p  class="question">
+                        ➡ Rozpocznijmy podróż przez prehistorię!
+                    </p>
+
+                </div>
+
+            </aside>
+        </section>
+        <!-- navigation -->
+        <div class="navigation">
+            <button onclick="window.location.href='index.html'">
+                ⬅ Wstecz
+            </button>
+
+            <button onclick="window.location.href='slide2.html'">
+                Dalej ➡
+            </button>
+        </div>
+
+        <!-- MODAL -->
+
+        <div id="modal" class="modal">
+
+            <div id="modalContent" class="modal-content">
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <footer>© 2026 EduMost • Wszelkie prawa zastrzeżone.</footer>
+</body>
+
+</html>

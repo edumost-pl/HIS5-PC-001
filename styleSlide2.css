@@ -1,0 +1,140 @@
+.flex-column{
+    max-width:1200px;
+    margin:0 auto;
+
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+
+/* Большая шкала времени */
+.image-area{
+    max-width:1200px;
+    width:100%;
+    margin:0 auto;
+    
+}
+
+.image-area img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius: 15px;
+    transition:.3s;
+    cursor: pointer;
+}
+.image-area:hover{
+    transform: scale(1.03);
+}
+
+.intro-area{
+    gap:20px;
+    text-align:center; 
+    font-size: 1.3rem;   
+}
+
+
+/* Блок Совы */
+.reasons-area{
+    max-width:1100px;
+    width:100%;
+
+    margin:0 auto;
+}
+/* Нижняя стрелка */
+.fon{
+    max-width:900px;
+    width:100%;
+
+    margin:0 auto;
+
+    text-align:center;
+}
+
+
+
+
+
+/* navigation */
+
+.navigation{
+    display:flex;
+    justify-content:space-between;
+    margin-top:40px;
+}
+
+.navigation button{
+    background:#da941d;
+    color:white;
+    border:none;
+    padding:12px 24px;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:all .3s ease;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.navigation button:hover:not(:disabled){
+    transform:translateY(-2px);
+    box-shadow:0 6px 14px rgba(0,0,0,.2);
+}
+
+.navigation button:disabled{
+    background:#bfc7d1;
+    cursor:not-allowed;
+    box-shadow:none;
+}
+
+/* Footer */
+footer {
+  margin: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  color: #666;
+}
+
+
+
+
+
+/* Для телефона */
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .intro-area{
+        font-size:1.2rem;
+    }
+
+    .reasons-area{
+        padding:15px;
+    }
+
+    .fon{
+        font-size:1rem;
+    }
+
+}
+
+/* Телефон в вертикальной ориентации */
+
+@media (max-width: 768px) and (orientation: portrait) {
+
+  .image-overlay img {
+
+    transform: rotate(90deg);
+
+    width: 95vh;
+    height: 95vw;
+
+    max-width: none;
+    max-height: none;
+  }
+
+}

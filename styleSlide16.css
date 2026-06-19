@@ -1,0 +1,18 @@
+.lesson-layout{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Мобильная версия: */
+
+@media(max-width:900px){
+
+    .quiz-area{
+
+        grid-template-columns:1fr;
+    }
+    iframe{
+        height: 380px;
+    }
+
+}

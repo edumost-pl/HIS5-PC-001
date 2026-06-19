@@ -1,0 +1,27 @@
+/* ==========================================
+   SLAJD 9
+   WĘDRÓWKI LUDZI
+========================================== */
+
+.image-area{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+
+.cards-area{
+
+    grid-template-columns:1fr;
+
+}
+
+
+@media (max-width:900px){
+
+    .image-area{
+
+        grid-template-columns:1fr;
+    }
+
+}

@@ -1,0 +1,135 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pl">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>HIS4-ZPL-001</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f8f6ef;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #8B5E3C;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .route {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+            margin-bottom: 30px;
+        }
+
+        .route h2 {
+            margin-top: 0;
+            color: #8B5E3C;
+        }
+
+        .route ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .route li {
+            padding: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        .start {
+            text-align: center;
+        }
+
+        .start button {
+            background: #af8e4c;
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 1.3rem;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .start button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="hero">
+            <h1>🌍 Podróż do prehistorii</h1>
+
+            <p>
+                Cofnijmy się tysiące lat wstecz i zobaczmy,
+                jak żyli pierwsi ludzie.
+            </p>
+        </div>
+
+        <div class="route">
+            <h2>🗺️ Trasa lekcji</h2>
+
+            <ul>
+                <li>🕒 Wielka oś czasu</li>
+                <li>🧑 Jak zmieniał się człowiek?</li>
+                <li>🏹 Życie myśliwych i zbieraczy</li>
+                <li>🔥 Odkrycie ognia</li>
+                <li>🏠 Pierwsze schronienia</li>
+                <li>🛠️ Narzędzia z kamienia, kości i drewna</li>
+                <li>🎮 Gra podsumowująca</li>
+            </ul>
+            <p style="text-align:center;color:#888;">
+                ⏱️ Czas: około 15 minut • 🎯 Poziom: klasa 4
+            </p>
+        </div>
+
+
+        <div class="start">
+            <button onclick="startLesson()">
+                🚀 Rozpocznij lekcję
+            </button>
+        </div>
+     
+
+
+    </div>
+    <footer>© 2026 EduMost • Wszelkie prawa zastrzeżone.</footer>
+    <script>
+        function startLesson() {
+            window.location.href = "slide1.html";
+        }
+    </script>
+</body>
+
+</html>

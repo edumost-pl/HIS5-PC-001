@@ -1,0 +1,28 @@
+/* ==========================================
+   SLAJD 11
+   DYMARKA
+========================================== */
+
+.image-area{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.cards-area{
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+}
+
+
+@media (max-width:900px){
+
+    .cards-area{
+
+        grid-template-columns:1fr;
+    }
+
+}

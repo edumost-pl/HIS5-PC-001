@@ -1,0 +1,48 @@
+/* ==========================================
+   SLIDE 1
+   PODRÓŻ DO CZASÓW PIERWSZYCH LUDZI
+========================================== */
+
+
+.intro-area{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    text-align:center;
+    
+}
+
+
+.left-area,
+.right-area{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+
+.owl-area{
+
+    display:grid;
+
+    grid-template-columns:180px 1fr;
+
+    align-items:center;
+}
+
+
+/* MOBILE */
+
+@media (max-width:900px){
+
+    .owl-area{
+
+        grid-template-columns:1fr;
+    }
+    
+
+}

@@ -1,0 +1,212 @@
+/* styleslide4.css */
+.fon{
+  background-color: #f7f1e3;
+  padding: 3.5%;
+  font-size: 1.4rem;
+  border-radius: 25px;
+  border: 2px solid #eab12e;
+  /* text-align: center; */
+  margin: 3%;
+  line-height: 1.1;
+
+}
+.fon p{
+  font-family: "Merriweather", serif;
+  color:#553007;
+}
+.fon h3{
+  font-family: "Merriweather", serif;
+  color:#553007;
+  text-align: center;
+}
+.lesson-layout{
+
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    gap:20px;
+    grid-template-columns:
+        410px
+        1fr;
+    grid-template-areas:
+        "title title "
+        "intro intro "
+        "image image"
+        "left  right"
+        "left reasons "
+        "owl owl ";
+}
+
+.title-area{
+    grid-area:title;
+    text-align:center;
+}
+
+.title-area h1{
+
+    font-size:60px;
+    color:#7d3f17;
+}
+
+.title-area h2{
+    color:#b6632a;
+}
+
+
+.intro-area{
+    grid-area:intro;
+    color: #2f2b2b;
+    line-height: 1.6;
+}
+
+.left-area{
+    grid-area:left;
+    display:grid;
+    gap:20px;
+}
+
+.image-area{
+    grid-area:image;
+    
+}
+.image-area img{
+  width:100%;
+    height:auto;
+}
+
+.right-area{
+    grid-area:right;
+
+    display:grid;
+    gap:20px;
+}
+
+.reasons-area{
+    grid-area:reasons;
+}
+
+.owl-area{
+    grid-area:owl;
+    display:grid;
+    grid-template-columns:
+        180px
+        1fr;
+
+    align-items:center;
+}
+
+.left-area,
+.right-area{
+    align-content:start;
+}
+
+div .broun{
+    font-size: 1.5rem;
+    color: #ab700a;
+}
+
+
+/* left */
+.items-green-flex{
+  display: flex;
+  margin: 20px auto;
+}
+.items-green-flex img{
+  width: 80px;
+  height: 60px;
+}
+.items-green-flex p{
+  font-size: 1.1rem;
+}
+.items-green-flex p b{
+  color: #2f2b2b;
+}
+
+/*  */
+
+
+
+
+.facts-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+
+
+.owl{
+
+    font-size:100px;
+
+    text-align:center;
+}
+
+.question{
+
+    margin-top:15px;
+
+    font-weight:bold;
+
+    color:#c55b18;
+}
+
+
+
+
+
+@media(max-width:1000px){
+
+    .lesson-layout{
+
+        grid-template-columns:1fr;
+
+        grid-template-areas:
+            "title"
+            "intro"
+            "image"
+            "left"
+            "right"
+            "reasons"
+            "owl";
+    }
+
+    .facts-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .owl-area{
+
+        grid-template-columns:1fr;
+    }
+
+    .title-area h1{
+
+        font-size:38px;
+    }
+}
+
+@media(max-width:600px){
+
+    .facts-grid{
+
+        grid-template-columns:1fr;
+    }
+}
+
+/* Телефон в вертикальной ориентации */
+
+@media (max-width: 768px) and (orientation: portrait) {
+
+  .image-overlay img {
+
+    transform: rotate(90deg);
+
+    width: 95vh;
+    height: 95vw;
+
+    max-width: none;
+    max-height: none;
+  }
+
+}

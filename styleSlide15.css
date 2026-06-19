@@ -1,0 +1,109 @@
+/* Сетка карточек: */
+.quiz-area{
+
+    display:grid;
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:20px;
+
+    margin-top:25px;
+}
+/* Карточка: */
+.question-card{
+
+    padding:25px;
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+/* Заголовок: */
+.question-card h3{
+
+    color:#7a3e12;
+    font-size:1.7rem;
+}
+/* Кнопка: */
+.answer-btn{
+
+    border:none;
+
+    background:#8c5b2f;
+    color:white;
+
+    padding:12px 20px;
+
+    border-radius:12px;
+
+    font-size:1rem;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.answer-btn:hover{
+
+    transform:translateY(-2px);
+}
+/* Скрытый ответ: */
+.answer-box{
+
+    display:none;
+    margin-top:10px;
+    padding:15px;
+    border-radius:12px;
+    background:#f6efe2;
+    border:2px solid #d9c09a;
+    text-align:left;
+
+}
+
+.answer-box ul{
+    margin: 20px auto;
+    margin-left: 20px;
+}
+.answer-box ul>li{
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+/* Показ ответа: */
+
+.answer-box.show{
+
+    display:block;
+
+    animation:fadeIn .3s ease;
+}
+
+/* Анимация: */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(10px);
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Мобильная версия: */
+
+@media(max-width:900px){
+
+    .quiz-area{
+
+        grid-template-columns:1fr;
+    }
+
+}
