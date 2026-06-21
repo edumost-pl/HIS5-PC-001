@@ -681,26 +681,14 @@ footer {
   body {
     overflow-x: hidden;
   }
-
-  .lesson-layout,
-  .panel,
-  .image-area,
-  .cards-area {
-    min-width: 0;
-  }
-
-  .wrapper {
-    width: 100%;
-    padding: 12px;
-  }
-
   .panel {
     padding: 18px;
   }
 
   .title-area h1,
   .title-area h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin: 0 auto;
   }
 
   .intro-area {
@@ -712,6 +700,7 @@ footer {
   }
   .title-area {
     max-width: 500px;
+    min-width: 50px;
   }
   .history-divider {
     max-width: 90%;
@@ -719,56 +708,50 @@ footer {
   }
   .intro-area {
     grid-template-columns: 1fr;
+  }
+  .lesson-layout,
+  .panel,
+  .image-area,
+  .cards-area{
+    margin: 0;
+    min-width: 0;
+  }
+
+  .wrapper {
+    width: 99%;
+    padding: 3px;
+  }
+  .image-area{
+    width: 100%;
+  }
+  .image-area img {
+    width: 100%;
+    min-width: none;
+  }
+  .icon{
+    width: 20px;
+  }
+  h3{
+    font-size: 1.3rem;
+  }
+  .panel{
+    padding: 4px;
+  }
+  ul li{
+    margin-left: 20px;
   }
 }
 
-/* @media (max-width: 768px) {
-  html,
-  body {
-    overflow-x: hidden;
-  }
+@media (max-width: 768px) {
+    .title-area-block img{
+        display:none;
+    }
+    .title-area div h2{
+        font-size: 1.7rem;
+    }
+}
 
-  .lesson-layout,
-  .panel,
-  .image-area,
-  .cards-area {
-    min-width: 0;
-  }
-
-  .wrapper {
-    width: 100%;
-    padding: 12px;
-  }
-
-  .panel {
-    padding: 18px;
-  }
-
-  .title-area h1,
-  .title-area h2 {
-    font-size: 2rem;
-  }
-
-  .intro-area {
-    font-size: 1rem;
-  }
-
-  .lesson-layout {
-    gap: 15px;
-  }
-  .title-area {
-    max-width: 500px;
-  }
-  .history-divider {
-    max-width: 90%;
-    margin: 0 auto;
-  }
-  .intro-area {
-    grid-template-columns: 1fr;
-  }
-} */
-
-@media (max-width: 768px) and (orientation: landscape){
+@media (max-width: 768px) and (orientation: landscape) and (orientation: portrait){
 
     .modal-content img{
         width:100vw;
@@ -776,4 +759,15 @@ footer {
         object-fit:contain;
     }
 
+    .image-overlay img {
+
+    transform: rotate(90deg);
+    width: 95vh;
+    height: 95vw;
+    max-width: none;
+    max-height: none;
+  }
+
 }
+
+
